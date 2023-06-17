@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(115, 26, 232);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.title {
+    color: rgb(115, 26, 232);
+    font-size: 2.5rem;
+    margin: 0 0 2rem;
+
+    @media (max-width: 480px) {
+        font-size: 2rem;
+        margin: 0 0 0.5rem;
+    }
+}
+
+.container {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    @media (max-width: 480px) {
+        padding: .5rem;
+        margin: 0 .5rem;
+    }
+}
+
+.inner-container {
+    outline: 2px dashed #333;
+    padding: 1rem;
+}
+
+.fa-icon {
+    font-size: 7rem;
+    color: rgb(115, 26, 232);
+
+    @media (max-width: 480px) {
+        font-size: 4rem;
+    }
+}
+
+.text {
+    font-size: 1.25rem;
+    margin: 2rem 0 0;
+}
+
+.highlight {
+    color: rgb(115, 26, 232);
+    cursor: pointer;
+}
+
+.file-name-container {
+    display: none;
+    margin: 1rem 0;
+}
+
+.file-name-container.active {
+    background-color: #f0f0f0;
+    padding: .3rem 0;
+    border-radius: 0.2rem;
+    display: block;
+    margin: 1rem 0 0;
+}
+
+.convert-btn {
+    background-color: rgb(115, 26, 232);
+    border: none;
+    color: #fff;
+    padding: .5rem 2rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.hidethis{
+    display: none;
+}
